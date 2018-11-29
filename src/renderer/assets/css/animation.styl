@@ -1,0 +1,21 @@
+ @-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotateZ(0deg);
+    }
+    to {
+        -webkit-transform: rotateZ(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+.spin {
+    -webkit-animation: spin 1s linear 1s 5 alternate;
+    animation: spin 1s linear infinite;
+}
